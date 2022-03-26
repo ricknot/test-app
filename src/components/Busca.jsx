@@ -3,19 +3,24 @@ import './Busca.css';
 import Button from "./Buttonbusca";
 
 
-const Busca = () => {
+const Busca = ({handleBuscaAdd}) => {
 
-    const [inputData, setInputData] = useState("");
+    const [inputData, setInputData] = useState('');
 
     const handleInputChange = (e) => {
         setInputData(e.target.value);
         // console.log(e.target.value);
-    }
+    };
+
+    const handleBuscaAddClick = () => {
+        handleBuscaAdd(inputData);
+        setInputData("");
+    };
 
     return (  
         <div className="busca-container">
             <input onChange={handleInputChange} value={inputData} className="busca-input" type="text"/>
-                <Button>Buscar</Button>
+                <Button onClick={handleBuscaAddClick}>Buscar</Button>
         </div>
         );
 }

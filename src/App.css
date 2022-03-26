@@ -1,6 +1,7 @@
 .container {
     max-width: 800px;
     margin: 30px auto;
+    padding: 10px 20px;
     overflow: auto;
     border: 1px solid whitesmoke;
 }

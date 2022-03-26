@@ -1,0 +1,12 @@
+.item-container {
+    background-color: rgb(143, 132, 132);
+    margin: 8px 0;
+    padding: 15px 20px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    color:azure;
+    cursor: pointer;
+
+}
